@@ -1,18 +1,35 @@
 export default function ResultView({ result, onReset }) {
-  const download = () => {
+  const filename = result.filename || 'result.png'
+
+  const download = async () => {
     if (!result.blob) return
+
+    // Mobile: use Web Share API (works reliably on iOS Safari + Android)
+    if (navigator.share && navigator.canShare) {
+      try {
+        const file = new File([result.blob], filename, { type: result.blob.type })
+        if (navigator.canShare({ files: [file] })) {
+          await navigator.share({ files: [file], title: filename })
+          return
+        }
+      } catch (err) {
+        // User cancelled or share failed — fall through to anchor method
+        if (err.name === 'AbortError') return
+      }
+    }
+
+    // Desktop / fallback: programmatic anchor click
     const url = URL.createObjectURL(result.blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = result.filename || 'result.png'
+    a.download = filename
     a.style.display = 'none'
     document.body.appendChild(a)
     a.click()
-    // Clean up after a short delay to ensure download starts
     setTimeout(() => {
       document.body.removeChild(a)
       URL.revokeObjectURL(url)
-    }, 500)
+    }, 1000)
   }
 
   return (
@@ -22,19 +39,10 @@ export default function ResultView({ result, onReset }) {
       ) : (
         <>
           <img src={result.url} alt="Result" className="result-img" />
-          <a
-            href={result.url}
-            download={result.filename || 'result.png'}
+          <button
             className="btn-download"
-            onClick={(e) => {
-              // For browsers that don't support download attr on blob URLs
-              // fall back to manual approach
-              if (result.blob) {
-                e.preventDefault()
-                download()
-              }
-            }}
-          >⬇️ Download Result</a>
+            onClick={download}
+          >⬇️ Download Result</button>
         </>
       )}
       <button className="btn-secondary" onClick={onReset}>Process Another Image</button>
