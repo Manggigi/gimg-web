@@ -36,6 +36,4 @@ RUN ldd /usr/local/bin/gimg-rust-api || true
 
 USER appuser
 
-EXPOSE 8787
-
-CMD ["sh", "-c", "echo 'Starting gimg-rust-api on port ${PORT:-8787}' && exec gimg-rust-api"]
+CMD ["sh", "-c", "echo Starting gimg-rust-api on port=$PORT && exec gimg-rust-api"]
