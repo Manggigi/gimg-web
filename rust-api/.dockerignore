@@ -1,0 +1,28 @@
+# Dockerfile and dockerignore
+Dockerfile
+.dockerignore
+
+# Git
+.git
+.gitignore
+
+# Rust artifacts
+target/
+Cargo.lock
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation
+README.md
+docs/
+
+# Logs
+*.log

@@ -1,0 +1,14 @@
+/Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/deps/thiserror-d1322b18cdf5212f.d: /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/aserror.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/display.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/var.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/private.rs /Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/build/thiserror-3518d268af4350a4/out/private.rs
+
+/Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/deps/libthiserror-d1322b18cdf5212f.rlib: /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/aserror.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/display.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/var.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/private.rs /Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/build/thiserror-3518d268af4350a4/out/private.rs
+
+/Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/deps/libthiserror-d1322b18cdf5212f.rmeta: /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/aserror.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/display.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/var.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/private.rs /Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/build/thiserror-3518d268af4350a4/out/private.rs
+
+/Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs:
+/Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/aserror.rs:
+/Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/display.rs:
+/Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/var.rs:
+/Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/private.rs:
+/Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/build/thiserror-3518d268af4350a4/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/build/thiserror-3518d268af4350a4/out

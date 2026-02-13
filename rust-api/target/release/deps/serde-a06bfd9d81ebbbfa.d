@@ -1,0 +1,14 @@
+/Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/deps/serde-a06bfd9d81ebbbfa.d: /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/build/serde-c399bb8dcd02a07b/out/private.rs
+
+/Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/deps/libserde-a06bfd9d81ebbbfa.rlib: /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/build/serde-c399bb8dcd02a07b/out/private.rs
+
+/Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/deps/libserde-a06bfd9d81ebbbfa.rmeta: /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/build/serde-c399bb8dcd02a07b/out/private.rs
+
+/Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/gian/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/build/serde-c399bb8dcd02a07b/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/gian/.openclaw/workspace/apps/gimg-web/rust-api/target/release/build/serde-c399bb8dcd02a07b/out
