@@ -1,2 +1,8 @@
 frontend/
+rust-api/target/
+api/
+gimg/
+*.pyc
+__pycache__/
 node_modules/
+.git/
