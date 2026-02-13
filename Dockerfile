@@ -18,12 +18,11 @@ COPY rust-api/assets ./assets
 # Build the actual application
 RUN cargo build --release
 
-# Runtime stage — minimal image
-FROM debian:bookworm-slim
+# Runtime stage
+FROM debian:bookworm
 
 RUN apt-get update && apt-get install -y \
     ca-certificates \
-    libgcc-s1 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -m -u 1001 appuser
@@ -32,9 +31,11 @@ COPY --from=builder /usr/src/app/target/release/gimg-rust-api /usr/local/bin/gim
 
 RUN mkdir -p /tmp && chmod 1777 /tmp
 
+# Verify binary runs
+RUN ldd /usr/local/bin/gimg-rust-api || true
+
 USER appuser
 
-ENV PORT=8787
 EXPOSE 8787
 
-CMD ["gimg-rust-api"]
+CMD ["sh", "-c", "echo 'Starting gimg-rust-api on port ${PORT:-8787}' && exec gimg-rust-api"]
