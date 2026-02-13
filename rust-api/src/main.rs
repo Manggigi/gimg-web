@@ -68,8 +68,13 @@ async fn not_implemented() -> impl IntoResponse {
 async fn main() {
     // Initialize tracing
     tracing_subscriber::fmt()
-        .with_env_filter(tracing_subscriber::EnvFilter::from_default_env())
+        .with_env_filter(
+            tracing_subscriber::EnvFilter::try_from_default_env()
+                .unwrap_or_else(|_| tracing_subscriber::EnvFilter::new("info"))
+        )
         .init();
+
+    eprintln!("[gimg-rust-api] Starting up...");
 
     // Build the API routes
     let api_router = Router::new()
@@ -107,11 +112,14 @@ async fn main() {
 
     let addr = SocketAddr::from(([0, 0, 0, 0], port));
     
+    eprintln!("[gimg-rust-api] Binding to {}", addr);
     info!("GIMG Rust API server starting on {}", addr);
 
     let listener = tokio::net::TcpListener::bind(addr)
         .await
         .expect("Failed to bind to address");
+
+    eprintln!("[gimg-rust-api] Listening on {}", addr);
 
     axum::serve(listener, app)
         .await
