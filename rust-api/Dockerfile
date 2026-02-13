@@ -1,5 +1,5 @@
 # Multi-stage Dockerfile for Railway deployment
-FROM rust:1.85-bookworm as builder
+FROM rust:1.87-bookworm as builder
 
 WORKDIR /usr/src/app
 
