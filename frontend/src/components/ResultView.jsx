@@ -1,9 +1,18 @@
 export default function ResultView({ result, onReset }) {
   const download = () => {
+    if (!result.blob) return
+    const url = URL.createObjectURL(result.blob)
     const a = document.createElement('a')
-    a.href = result.url
-    a.download = result.filename
+    a.href = url
+    a.download = result.filename || 'result.png'
+    a.style.display = 'none'
+    document.body.appendChild(a)
     a.click()
+    // Clean up after a short delay to ensure download starts
+    setTimeout(() => {
+      document.body.removeChild(a)
+      URL.revokeObjectURL(url)
+    }, 500)
   }
 
   return (
@@ -13,7 +22,19 @@ export default function ResultView({ result, onReset }) {
       ) : (
         <>
           <img src={result.url} alt="Result" className="result-img" />
-          <button className="btn-download" onClick={download}>⬇️ Download Result</button>
+          <a
+            href={result.url}
+            download={result.filename || 'result.png'}
+            className="btn-download"
+            onClick={(e) => {
+              // For browsers that don't support download attr on blob URLs
+              // fall back to manual approach
+              if (result.blob) {
+                e.preventDefault()
+                download()
+              }
+            }}
+          >⬇️ Download Result</a>
         </>
       )}
       <button className="btn-secondary" onClick={onReset}>Process Another Image</button>
